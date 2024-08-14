@@ -19,7 +19,7 @@
     ],
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "swiftmailer/swiftmailer": "~6.0"
+        "swiftmailer/swiftmailer": "dev-main"
     },
     "require-dev": {
         "cweagans/composer-patches": "^1.7",
@@ -29,6 +29,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/transformd-ltd/swiftmailer"
         }
     ],
     "autoload": {
@@ -47,6 +51,12 @@
                 "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
                 "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
             }
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "cweagans/composer-patches": true,
+            "yiisoft/yii2-composer": true
         }
     }
 }
