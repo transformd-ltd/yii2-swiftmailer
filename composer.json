@@ -17,24 +17,19 @@
             "email": "klimov.paul@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }    ],
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "swiftmailer/swiftmailer": "dev-main"
+        "swiftmailer/swiftmailer": "dev-master"
     },
     "require-dev": {
         "cweagans/composer-patches": "^1.7",
         "phpunit/phpunit": "4.8.34"
     },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/transformd-ltd/swiftmailer"
-        }
-    ],
     "autoload": {
         "psr-4": { "yii\\swiftmailer\\": "src" }
     },
