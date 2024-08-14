@@ -24,7 +24,7 @@
         }    ],
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "swiftmailer/swiftmailer": "dev-master"
+        "swiftmailer/swiftmailer": "^6.3"
     },
     "require-dev": {
         "cweagans/composer-patches": "^1.7",
