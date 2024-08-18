@@ -1,7 +1,14 @@
 {
     "name": "yiisoft/yii2-swiftmailer",
     "description": "The SwiftMailer integration for the Yii framework",
-    "keywords": ["yii2", "swift", "swiftmailer", "mail", "email", "mailer"],
+    "keywords": [
+        "yii2",
+        "swift",
+        "swiftmailer",
+        "mail",
+        "email",
+        "mailer"
+    ],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
@@ -21,17 +28,24 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
-        }    ],
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/transformd-ltd/swiftmailer"
+        }
+    ],
     "require": {
         "yiisoft/yii2": ">=2.0.4",
-        "swiftmailer/swiftmailer": "^6.3"
+        "swiftmailer/swiftmailer": "dev-main"
     },
     "require-dev": {
         "cweagans/composer-patches": "^1.7",
         "phpunit/phpunit": "4.8.34"
     },
     "autoload": {
-        "psr-4": { "yii\\swiftmailer\\": "src" }
+        "psr-4": {
+            "yii\\swiftmailer\\": "src"
+        }
     },
     "extra": {
         "branch-alias": {
